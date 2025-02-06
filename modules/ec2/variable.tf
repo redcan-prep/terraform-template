@@ -18,19 +18,6 @@ variable "subnet_id" {
   type = string
 }
 
-# variable "ingress_security_group_id" {
-#   type = string
-# }
-
-# variable "ingress_ipv4_port80" {
-#   type = string
-# }
-
-
-# variable "egress_security_group_id" {
-#   type = string
-# }
-
 variable "security_group" {
   type = string
 }

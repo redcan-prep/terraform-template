@@ -24,7 +24,6 @@ resource "aws_vpc_security_group_egress_rule" "egress_ipv4" {
 
 resource "aws_vpc_security_group_ingress_rule" "ingress_ipv4_ssh" {
   security_group_id = aws_security_group.security_group.id
-  # count             = length(var.public_cidr_block)
   cidr_ipv4   = "0.0.0.0/0"
   from_port   = 22
   to_port     = 22
@@ -33,7 +32,6 @@ resource "aws_vpc_security_group_ingress_rule" "ingress_ipv4_ssh" {
 
 resource "aws_vpc_security_group_ingress_rule" "ingress_ipv4_port80" {
   security_group_id = aws_security_group.security_group.id
-  # count             = length(var.public_cidr_block)
   cidr_ipv4   = "0.0.0.0/0"
   from_port   = 80
   to_port     = 80

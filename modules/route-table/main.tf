@@ -19,16 +19,3 @@ resource "aws_route_table_association" "public_subnet_association" {
   route_table_id = aws_route_table.route_table.id
 }
 
-
-
-
-
-
-# dynamic "route" {
-#   for_each = var.multiple_routes
-#   iterator = item   #optional
-#   content {
-#     cidr_block = item.value.cidr_block
-#     gateway_id = item.value.internet_gateway
-#   }
-# }

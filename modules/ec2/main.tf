@@ -23,11 +23,6 @@ resource "null_resource" "copyhtml" {
   provisioner "local-exec" {
     command = "echo 'Instance created'"
   }
-  # provisioner "remote-exec" {
-  #   inline = [
-  #     "sudo su"
-  #   ]
-  # }
 
   provisioner "file" {
     source      = "../file-provisioner/copy.sh"
